@@ -3,13 +3,28 @@
 {% block title %} SETUP INICIAL {% endblock %}
 
 {% block stylesheets %}
+<link rel="stylesheet" href="src/scss/index.scss">
 {% endblock %}
 
 {% block body %}
   {% include "/components/contact-bar.twig" %}
   {% include "/components/navbar.twig" %}
+  <style>
 
-  <div class="bg-dark" style="height:600px">
+  </style>
+  <div class="banner position-relative">
+     <div class="widget position-absolute">
+        <div class="btn btn-sm rounded-3 mb-2 btn-dark">Bem vindos a NOME</div>
+        <h1 class="text-light fw-bold fs-sm-1 fs-3 ">Somos uma companhia confiável de vistos</h1>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae inventore fugit id eveniet excepturi nobis necessitatibus expedita consequuntur magni sequi voluptatum quo suscipit sapiente officiis voluptate ad corporis, cumque quos!</p>
+        <div class="btn btn-info btn-lg fw-bold text-white">Descubra Mais</div>
+     </div>
+    
+     <img src="/src/assets/images/muie aeroporto.jpg" class="w-100 d-none d-lg-block" alt="">
+     <img src="/src/assets/images/muie aeroporto mobile.jpg" class="w-100 d-block d-lg-none" alt="">
+  </div>
+
+
   </div>
 {% endblock %}
 
