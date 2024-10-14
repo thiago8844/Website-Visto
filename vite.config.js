@@ -1,6 +1,9 @@
-import vituum from 'vituum'
-import twig from '@vituum/vite-plugin-twig'
+import vituum from "vituum";
+import twig from "@vituum/vite-plugin-twig";
 
 export default {
-    plugins: [vituum(), twig({root: "./src"})]
-}
+  build: {
+    outDir: "docs", // Change output directory to 'docs'
+  },
+  plugins: [vituum(), twig({ root: "./src" })],
+};
