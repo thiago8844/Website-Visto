@@ -1,36 +1,38 @@
-<style>
-.contact-bar {
 
-}
-.contact-bar a{
-  height:100%;
-}
+<link rel="stylesheet" href="/src/scss/contact-bar.scss">
 
-.contact-bar i {
-  margin: 0;
-  margin-top: 3px
+<div class="contact-bar d-none d-lg-flex justify-content-center">
+
   
-}
-</style>
-
-<div class="row bg-dark d-none d-sm-block">
-  <div class="col-12">
-    <div class="container px-sm-3 d-flex justify-content-between py-1">
-      <a href="#" class="contato text-white text-decoration-none">
-        <i class="fa-brands fa-whatsapp text-success h5 m-0" ></i>
-        <span class="fw-semibold">(31) 99845-1415</span>
-      </a>
-      <div class="logos d-flex gap-3">
-        <a class="text-decoration-none" href="#">
-          <i class="fa-brands fa-x-twitter  text-light"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-instagram  text-light"></i>
-        </a>
-        <a href="#">
-         <i class="fa-brands fa-facebook  text-light"></i>
-        </a>
+  <div class="container">
+    <div class="row">
+      <!-- Contato 1-->
+      <div class="col-8 px-3 items-contato">
+        <div class="d-flex  py-1">
+          <a href="#" class="contato text-white text-decoration-none">
+            <i class="fa-brands fa-whatsapp text-success h5 m-0" ></i>
+            <span class="fw-semibold">(31) 99845-1415</span>
+          </a>
+        </div>
       </div>
+
+      <!-- Redes Sociais-->
+      <div class="col-4 px-3 social-logos" >
+        <div class="logos gap-3 d-flex justify-content-end py-1">
+            <a class="text-decoration-none" href="#">
+              <i class="fa-brands fa-x-twitter  text-light"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram  text-light"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook  text-light"></i>
+            </a>
+        </div>
+      </div>
+
     </div>
   </div>
+  
+
 </div>

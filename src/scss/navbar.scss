@@ -1,5 +1,13 @@
+$primary: #234091;
+.navbar .navbar-brand img {
+  width: 200px;
 
-.navbar {
-
-
+}
+.navbar{
+  background-color: #f2f6ff;
+}
+@media (min-width: 768px) {
+  .not-sticky-md {
+    position: static !important;
+  }
 }

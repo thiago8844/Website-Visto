@@ -1,0 +1,25 @@
+$corprimaria: #0c0f2c;
+$corsecundaria: #234091;
+
+.contact-bar {
+  background: linear-gradient(90deg, rgba(12,15,44,1) 80%, rgba(35,64,145,1) 80%);
+}
+.contact-bar a {
+  height: 100%;
+}
+
+.contact-bar i {
+  margin: 0;
+  margin-top: 3px;
+}
+.contact-bar .items-contato {
+  background-color: $corprimaria;
+}
+.contact-bar .social-logos {
+  clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: $corsecundaria;
+}
+
+.contact-bar .complement {
+  flex-grow: 1;
+}

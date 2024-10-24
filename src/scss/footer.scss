@@ -1,0 +1,33 @@
+$corprimaria: #161616;
+$corsecundaria: #535353;
+
+footer {
+  background-color: $corprimaria;
+}
+
+footer .logos-footer {
+
+}
+
+footer .logos-footer a i {
+  margin: 0;
+}
+footer .logos-footer a:hover i {
+  color: black !important;
+}
+
+footer .quick-links a{
+  text-decoration: none;
+  color: rgb(236, 236, 236);
+}
+
+footer .quick-links a:hover {
+  color: rgb(161, 161, 161);
+  text-decoration: underline;
+}
+
+footer .footer-end {
+  background-color: #01020A;
+  color: rgb(90, 90, 90);
+  
+}

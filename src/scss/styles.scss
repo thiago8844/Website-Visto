@@ -1,10 +1,13 @@
-$primary: rgb(247, 247, 247);
+
+$primary: #234091;
+$secondary: #0c0f2c;
 
 /* Variáveis SASS */
 $font-family-sans-serif: "Open Sans", sans-serif;
 
 // NavBar
 $navbar-padding-y: 1rem;
+$navbar-light-hover-color: $secondary;
 $navbar-dark-color: #fff;
 // $navbar-dark-hover-color: $secondary;
 
