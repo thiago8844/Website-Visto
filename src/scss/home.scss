@@ -1,116 +1,175 @@
+
+
+
+body {
+  overflow-x: hidden;
+  overflow-x: clip !important;
+
+}
+
+
+
+// Banner
+.banner {
+
+  //background: url("../assets/images/fundoazul.jpg");
+  background: url("../assets/images/fundoestrelado2.jpg");
+  object-fit: cover;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.banner img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background: none;
+  width: 100%;
+}
+
+.banner .titulo-header {
+  font-size: 3.3rem;
+}
+
+.banner .text-container {
+  height: 100%;
+}
+
+.botao-inicial {
+  font-size: 1rem;
+  width: 50%;
+}
+
+
+
 .img-details {
   height: 600px;
   width: 100%;
   object-fit: cover;
-}
-
-
-.banner .widget {
-  top: 50%;
-  width: 40%;
-  margin-left: 7rem;
-  transform: translateY(-50%);
-  left: 4em;
 
 }
 
-.banner .titulo-header {
-  font-size: 3.8rem;
+.details h2 {
+  font-weight: 500;
 }
 
-@media(min-width: 1280px) and (max-width: 1680px){
-  .banner .widget {
-    width: 50%;
-    margin-left: 2rem;
-  }
-.banner .titulo-header {
-  font-size: 3rem;
-}
+//Processo Visto
+.processo-visto h2 {
+  font-weight: 500;
 }
 
-
-@media(min-width: 997px) and (max-width: 1280px){
-
-  .banner .widget {
-    width: 55%;
-    margin-left: 0.5rem;
-    left: 2.5em;
-  }
-  .banner .titulo-header {
-    font-size: 2.5rem;
-  }
-
-  .banner .lead {
-    font-size: 1rem;
-  }
-
-  .banner img {
-    height: 500px;
-    object-fit: cover;
-  }
-
+.processo-visto .card {
+  height: 320px;
 }
 
-
-@media(min-width: 777px) and (max-width: 996px){
-  
-  .banner .widget {
-    width: 50%;
-    margin-left: 0.5rem;
-  }
-  .banner .titulo-header {
-    font-size: 2.5rem;
-  }
-
-  .banner .lead {
-    font-size: 1rem;
-  }
-
+//card vistos
+.card-vistos {
+  background-color: white;
+  transition: 0.4s;
 }
 
-@media(min-width: 576px) and (max-width: 996px) {
-  .banner .widget {
-    width: 65%;
-    margin-left: 0.7rem;
-    left: 0;
-  }
+.card-vistos:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  transform: scale(1.01);
+}
+
+//Swiper
+
+
+@media (min-width: 1281px) and (max-width: 1680px) {
   .banner .titulo-header {
     font-size: 2.5rem;
   }
 
   .banner p {
-    font-size: 1rem !important;;
+    font-size: 1rem;
   }
-
-  .banner img {
-    height: 700px;
-    object-fit: cover;
-  }
-
 }
 
-@media(max-width: 575px) {
-  .banner .widget {
-    width:85%;
-    margin-left: 0.7rem;
-    left: 0;
+@media (min-width: 992px) and (max-width: 1280px) {
+  .banner .text-container {
+    padding-left: 24px !important;
   }
   .banner .titulo-header {
-    font-size: 2.3rem;
+    font-size: 2rem;
+    margin-bottom: 12px !important;
   }
 
-  .banner p, button {
-    font-size: 0.92rem !important;
+  .banner p {
+    font-size: 1rem;
+    margin-bottom: 0px !important;
   }
 
-  .banner .botao-inicial {
-    padding: 6px 0;
-    width: 75%;
-  }
-
-  .banner img {
-    height: 700px;
-    object-fit: cover;
+  .botao-inicial {
+    font-size: 1rem;
+    white-space: no-wrap;
+    width: 100%;
   }
 }
 
+@media (min-width: 576px) and (max-width: 991px) {
+  .banner {
+    padding: 6rem 3rem;
+  }
+  .banner .text-container {
+    padding-left: 5px !important;
+  }
+  .banner .titulo-header {
+    font-size: 2rem;
+    margin-bottom: 12px !important;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    margin-bottom: 12px !important;
+  }
+
+  .botao-inicial {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 575px) {
+  //Banner
+  .banner {
+    padding: 4rem 0.4rem;
+  }
+  .banner .text-container {
+    padding-left: 5px !important;
+  }
+  .banner .titulo-header {
+    font-size: 2rem;
+    margin-bottom: 24px !important;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    margin-bottom: 24px !important;
+  }
+
+  .botao-inicial {
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  //HEADER
+  header {
+    margin-top: 83px !important;
+  }
+
+  //Details
+
+
+
+
+  // .details img, .details .container {
+  //   display: none;
+  // }
+
+
+}

@@ -6,8 +6,25 @@ $primary: #234091;
 .navbar{
   background-color: #f2f6ff;
 }
-@media (min-width: 768px) {
-  .not-sticky-md {
-    position: static !important;
+
+nav .container {
+  padding: 0 !important;
+}
+
+@media (max-width: 561px) {
+  nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
   }
+  nav .container{
+    margin: 0 24px;
+  }
+
+  .navbar .navbar-brand img {
+    width: 150px;
+  }
+  
 }

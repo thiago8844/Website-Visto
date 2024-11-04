@@ -1,9 +1,11 @@
 {% extends "/layoults/base.twig" %}
 
-{% block title %} SETUP INICIAL {% endblock %}
+{% block title %} TF Vistos | Assessoria {% endblock %}
 
 {% block stylesheets %}
 <link rel="stylesheet" href="/src/scss/home.scss">
+<link rel="stylesheet" href="/src/scss/swiper.scss">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 {% endblock %}
 
 {% block body %}
@@ -11,26 +13,33 @@
     {% include "/components/navbar.twig" %}
 
 
-   <div class="banner position-relative">
+   <header class="banner position-relative rounded-bottom">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+        <!-- This Column-->
+          <div class="mb-5 mb-lg-0 col-lg-7 h-100">
+            <div class="widget text-white  text-container d-flex flex-column justify-content-center  ps-5 text-center text-lg-start">
+                <h1 class="titulo-header fw-bold mb-lg-4">
+                    <span style="color: #d2deff;">Facilite sua Jornada</span> com
+                    Nossa Assessoria Especializada 
+                </h1>
+                <p class="lead text-light">Cuidamos de todo o processo de obtenção de vistos, garantindo uma experiência tranquila e sem complicações.</p>
+                <button class="btn  btn-lg btn-primary  fw-bold mt-lg-3 botao-inicial text-nowrap">
+                    Inicie seu Processo Agora !
+                </button>
 
-      <div class="widget text-white position-absolute text-container px-4 d-flex flex-column justify-content-center">
+            </div>
+          </div>
 
-         
-         <h1 class="titulo-header fw-bold mb-lg-4">
-            <span style="color: #d2deff;">Facilite sua Jornada</span> com
-            Nossa Assessoria Especializada 
-         </h1>
-         <p class="lead">Cuidamos de todo o processo de obtenção de vistos, garantindo uma experiência tranquila e sem complicações.</p>
-         <button class="btn  btn-lg btn-primary  fw-bold mt-lg-3 botao-inicial w-50 ">
-            Inicie seu Processo Agora !
-         </button>
-
+          <div class="col-lg-5  p-0">
+            <div class="img-containerjustify-content-end">
+              <img src="/src/assets/images/bannerimage2.png" class="banner-img  d-none d-lg-inline " alt="">
+              <img src="/src/assets/images/imagem_banner_rmobile.png" class="banner-img d-block d-lg-none rounded" alt="">
+            </div>
+          </div>
       </div>
 
-      <img src="/src/assets/images/bannerazul.jpg" class="w-100 d-none d-lg-block" alt="Consultoria de Vistos - Aeroporto">
-      <img src="/src/assets/images/aeroporto mobile.jpg" class="w-100 d-block d-lg-none" alt="Consultoria de Vistos - Aeroporto Mobile">
-
-   </div>
+   </header>
 
    <!-- Icons -->
    <section class="icons bg-light pb-5 pt-5 px-3 px-xl-0">
@@ -71,10 +80,10 @@
    
 
    <!-- Detalhes -->
-   <section id="details" class="details my-5 mt-6">
-      <div class="container">
-         <div class="row g-5">
-         <div class="col-lg-6 mb-5 mb-lg-0">
+   <section id="details" class="details my-6">
+      <div class="container ">
+        <div class="row ">
+         <div class="col-12 col-lg-6 mb-5 mb-lg-0">
             <!-- Texto sobre os benefícios de tirar o visto com nossa companhia -->
             <div class="text-container d-flex flex-column justify-content-center h-100">
                <h2 class="display-6 text-primary">Por que escolher nossa assessoria para seu visto?</h2>
@@ -104,41 +113,215 @@
             </div>
 
          </div>
-         <div class="col-lg-6">
+         <div class="col-12 col-lg-6">
             <div class="image-container h-100">
                <img src="/src/assets/images/mulher feliz.png" alt="Mulher feliz com a mala por ter conseguido seu visto" class="img-details rounded">
             </div>
          </div>
-         </div>
+        </div>
       </div>
    </section>
 
-<!-- Statement -->
-<section class="statement mb-5">
+<!-- processo-visto -->
+<section class="processo-visto d-md-block d-none my-7 bg-secondary text-light pt-6 pb-7">
    <div class="container">
-      <div class="row">
+      
+      <div class="row mb-5">
          <div class="col-12">
-            <div class="text-container bg-light p-5 rounded-5">
-               <h2 >Especialistas em Soluções de Vistos Personalizadas para Suas Necessidades</h2>
-               <p>Na CONSULTORIA VISTOS, entendemos que o processo de obtenção de um visto pode ser complexo e desafiador. É por isso que oferecemos um atendimento especializado e focado em cada cliente, garantindo que todas as etapas sejam realizadas de forma ágil e sem complicações. Nossa equipe experiente está pronta para lidar com a burocracia, economizando seu tempo e evitando erros que possam atrasar o processo. Se você precisa de um visto para estudo, trabalho, turismo ou residência, estamos aqui para tornar esse sonho uma realidade de maneira segura e eficaz.</p>
-               <p class="fw-bold mt-3">Escolha a CONSULTORIA VISTOS e tenha a tranquilidade de saber que está sendo assessorado pelos melhores profissionais do setor, comprometidos com seu sucesso em cada etapa do caminho.</p>
+            <div class="text-container">
+               <h2 class="text-center ">Como Conseguir Seu Visto ?</h2>
+               <p class="lead text-center">Aqui está uma simplificação do nosso processo: ajudamos você a escolher o visto certo, preparamos para a entrevista e garantimos suporte até o recebimento do documento.</p>
             </div>
          </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <article class="bg-secondary shadow-none ">
+            <div class="card-etapas d-md-flex d-xl-block flex-column align-items-center mb-md-4">
+              <h6 class="text-uppercase text-warning mb-4">Passo 1:</h6>
+              <h5> <i class="fa-solid fa-passport h1 me-1 m-0"></i> Escolha seu Visto </h5>
+
+              <small class="w-75 d-block">
+                <div class="text-justify">
+                   Escolha o tipo de visto ideal para o seu objetivo e dê início à sua jornada em busca do seu sonho.
+                </div>
+              </small>
+              
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <article class=" bg-secondary shadow-none">
+            <div class="card-etapas d-md-flex d-xl-block flex-column align-items-center mb-md-4">
+              <h6 class="text-uppercase text-warning mb-4">Passo 2:</h6>
+              <h5 style=" white-space: nowrap;"> <i class="fa-solid fa-chalkboard-user h1 me-1 m-0"></i> Receba Treinamento</h5>
+
+              <small class="w-75 d-block">
+                <div class="text-justify">
+                  Analisamos suas informações e preparamos você com atenção a cada detalhe.
+                </div>
+              </small>
+              
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-6 col-xl-3">
+          <article class=" bg-secondary shadow-none">
+            <div class="card-etapas d-xl-block d-md-flex  flex-column align-items-center mb-md-4">
+              <h6 class="text-uppercase text-warning mb-4">Passo 3:</h6>
+             
+              <h5 style=" white-space: nowrap;" class="mb-0"> <span><img src="/src/assets/images/logo conversa.svg" alt="" class="me-1 d-inline-block mb-3" style="width: 50px; height: 41px; vertical-align: middle;"></span>Faça a Entrevista</h5>
+
+              <small class="w-75 d-block">
+                <div class="text-justify">
+                   Após um treinamento completo e planejamento detalhado, faça sua entrevista com confiança.
+                </div>
+              </small>
+              
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <article class=" bg-secondary shadow-none">
+            <div class="card-etapas d-md-flex d-xl-block flex-column align-items-center mb-md-4">
+              <h6 class="text-uppercase text-warning mb-4">Passo 4:</h6>
+             
+              <h5 style=" white-space: nowrap;" class="mb-0"> <span><img src="/src/assets/images/visto aprovado.svg" alt="" class="me-1 d-inline-block mb-3" style="width: 50px; height: 41px; vertical-align: middle;"></span>Receba Seu Visto</h5>
+
+              <small class="w-75 d-block">
+                <div class="text-justify">
+
+                  Parabéns! Com tudo aprovado, é hora de receber seu visto e comemorar a realização desse grande passo.
+                </div>
+              </small>
+              
+            </div>
+          </article>
+        </div>
+      </div>
+
    </div>
+
+</section>
+<!-- Processo Visto Mobile -->
+<section class="processo-visto my-7 bg-secondary d-md-none py-5">
+  <div class="container text-white">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="text-center ">Como Tirar Seu Visto ?</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <!-- Slides -->
+        {# <div class="swiper swipper-processo-visto">
+          <div class="swipper-wrapper">
+            <article class="bg-secondary shadow-none">
+              <div class="card-etapas text-center">
+                <h6 class="text-uppercase text-warning mb-4">Passo 1:</h6>
+                <h5> <i class="fa-solid fa-passport h1 me-1 m-0"></i> Escolha seu Visto </h5>
+
+                <small class="w-100 d-block">
+                  <div class="text-center px-5">
+                    Escolha o tipo de visto ideal para o seu objetivo e dê início à sua jornada em busca do seu sonho.
+                  </div>
+                </small>
+                
+              </div>
+            </article>
+          </div>
+        </div> #}
+        <div class="swiper swipper-processo-visto pb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="bg-secondary shadow-none">
+                <div class="card-etapas text-center">
+                  <h6 class="text-uppercase text-warning mb-4">Passo 1:</h6>
+                  <h5> <i class="fa-solid fa-passport h1 me-1 m-0"></i> Escolha seu Visto </h5>
+
+                  <small class="w-100 d-block">
+                    <div class="text-center px-5">
+                      Escolha o tipo de visto ideal para o seu objetivo e dê início à sua jornada em busca do seu sonho.
+                    </div>
+                  </small>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="bg-secondary shadow-none">
+                <div class="card-etapas text-center">
+                  <h6 class="text-uppercase text-warning mb-4">Passo 2:</h6>
+                  <h5><i class="fa-solid fa-chalkboard-user h1 me-1 m-0"></i> Receba Treinamento</h5>
+
+                  <small class="w-100 d-block">
+                    <div class="text-center px-5">
+                      Analisamos suas informações e preparamos você com atenção a cada detalhe.
+                    </div>
+                  </small>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="bg-secondary shadow-none">
+                <div class="card-etapas text-center">
+                  <h6 class="text-uppercase text-warning mb-4">Passo 3:</h6>
+                  <h5>  <span><img src="/src/assets/images/logo conversa.svg" alt="" class="me-1 d-inline-block mb-3" style="width: 50px; height: 41px; vertical-align: middle;"></span>Faça a Entrevista</h5>
+
+                  <small class="w-100 d-block">
+                    <div class="text-center px-5">
+                      Após um treinamento completo e planejamento detalhado, faça sua entrevista com confiança.
+                    </div>
+                  </small>
+                  
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="bg-secondary shadow-none">
+                <div class="card-etapas text-center">
+                  <h6 class="text-uppercase text-warning mb-4">Passo 4:</h6>
+                  <h5> <img src="/src/assets/images/visto aprovado.svg" alt="" class="me-1 d-inline-block mb-3" style="width: 50px; height: 41px; vertical-align: middle;"></span>Receba Seu Visto</h5>
+
+                  <small class="w-100 d-block">
+                    <div class="text-center px-5">
+                      Parabéns! Com tudo aprovado, é hora de receber seu visto e comemorar a realização desse grande passo.
+                    </div>
+                  </small>
+                  
+                </div>
+              </article>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination mt-6"></div>
+      </div>
+
+      </div>
+    </div>
+  </div>
 </section>
 
-
-     <!-- Detalhes 2 -->
-  <section class="details my-6 mb-8">
+<!-- Detalhes 2 -->
+<section class="details mb-6">
     <div class="container">
-      <div class="row g-5 ">
-        <div class="col-lg-6 mb-5 mb-lg-0">
+      <div class="row">
+        
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
           <div class="img-container ">
             <img src="/src/assets/images/man.jpg" alt="Homem concentrado trabalhando" class="img-details rounded">
           </div>
         </div>
-        <div class="col-lg-6">
+        
+        <div class="col-12 col-lg-6">
           <div class="text-container d-flex flex-column justify-content-center h-100">
             <!-- Texto sobre os profissionais da companhia -->
             <h2 class="display-6 text-primary">Profissionais Especialistas em Cada Detalhe</h2>
@@ -161,10 +344,116 @@
             </ul>
           </div>
         </div>
+
       </div>
     </div>
-  </section>
+</section>
 
+<!-- Cards Vistos-->
+<div class="section cards-vistos-container py-5 bg-light mb-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h6 class="text-uppercase text-primary">Nossos Serviços</h6>
+        <h2 class="text-secondary">Explore Os Vistos que Oferecemos</h2>
+      </div>
+    </div>
+    <!-- cards -->
+    <div class="row">     
+        <div class="col-md-6 col-xl-4 mb-xl-0 mb-3 ">
+          <article class="card-vistos rounded border  shadow">
+            <div class="card-title">
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+            </div>
+            <div class="card-img">
+              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="text p-3">
+              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+            </div>
+            <div class="saiba-mais">
+              <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-xl-0 mb-3 ">
+          <article class="card-vistos rounded border  shadow">
+            <div class="card-title">
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+            </div>
+            <div class="card-img">
+              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="text p-3">
+              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+            </div>
+            <div class="saiba-mais">
+              <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-xl-0 mb-3 ">
+          <article class="card-vistos rounded border  shadow">
+            <div class="card-title">
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+            </div>
+            <div class="card-img">
+              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="text p-3">
+              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+            </div>
+            <div class="saiba-mais">
+              <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-6 mb-xl-0 mb-3 mt-xl-4 ">
+          <article class="card-vistos rounded border  shadow">
+            <div class="card-title">
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+            </div>
+            <div class="card-img">
+              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="text p-3">
+              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+            </div>
+            <div class="saiba-mais">
+              <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-6 mb-xl-0 mb-3 mt-xl-4">
+          <article class="card-vistos rounded border  shadow">
+            <div class="card-title">
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+            </div>
+            <div class="card-img">
+              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="text p-3">
+              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+            </div>
+            <div class="saiba-mais">
+              <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
+            </div>
+          </article>
+        </div>
+
+      <!-- Adicionar enfeite para o espaço vazio-->
+
+    </div>
+
+  </div>
+</div>
+
+<!-- margin -->
+<div class="py-6"></div>
 
 <!-- E-mail -->
 <section class="download bg-secondary">
@@ -201,5 +490,20 @@
 
 
 {% block javascripts %}
-<script type="module" src="/src/scripts/swiper.js"></script>
+<!-- Swipper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".swipper-processo-visto", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+        el: ".swiper-pagination",
+  },
+});
+
+</script>
 {% endblock %}
