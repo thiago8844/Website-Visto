@@ -1,4 +1,4 @@
-import * as bootstrap from 'bootstrap' //importa o bootstrap
+import * as bootstrap from "bootstrap"; //importa o bootstrap
 import Alpine from "alpinejs";
 
 //Inicia o alpine JS

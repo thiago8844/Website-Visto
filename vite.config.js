@@ -7,4 +7,8 @@ export default {
     outDir: "docs",
   },
   plugins: [vituum(), twig({ root: "./src" })],
+  SERVER: {
+    host: "0.0.0.0",
+    port: 5173
+  }
 };

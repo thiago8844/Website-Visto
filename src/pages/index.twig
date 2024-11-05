@@ -16,7 +16,6 @@
    <header class="banner position-relative rounded-bottom">
       <div class="container-fluid">
         <div class="row d-flex align-items-center">
-        <!-- This Column-->
           <div class="mb-5 mb-lg-0 col-lg-7 h-100">
             <div class="widget text-white  text-container d-flex flex-column justify-content-center  ps-5 text-center text-lg-start">
                 <h1 class="titulo-header fw-bold mb-lg-4">
@@ -24,7 +23,7 @@
                     Nossa Assessoria Especializada 
                 </h1>
                 <p class="lead text-light">Cuidamos de todo o processo de obtenção de vistos, garantindo uma experiência tranquila e sem complicações.</p>
-                <button class="btn  btn-lg btn-primary  fw-bold mt-lg-3 botao-inicial text-nowrap">
+                <button data-bs-toggle="modal" data-bs-target="#modal-contato" class="btn  btn-lg btn-primary abrir-modal  fw-bold mt-lg-3 botao-inicial text-nowrap">
                     Inicie seu Processo Agora !
                 </button>
 
@@ -107,7 +106,7 @@
 
                <a  
                class="btn btn-primary text-white mt-4 align-self-start"
-               data-bs-toggle="modal" data-bs-target="#modal1">
+               data-bs-toggle="modal" data-bs-target="#modal-contato">
                Comece Agora
                </a>
             </div>
@@ -218,24 +217,6 @@
 
     <div class="row">
       <div class="col-12">
-        <!-- Slides -->
-        {# <div class="swiper swipper-processo-visto">
-          <div class="swipper-wrapper">
-            <article class="bg-secondary shadow-none">
-              <div class="card-etapas text-center">
-                <h6 class="text-uppercase text-warning mb-4">Passo 1:</h6>
-                <h5> <i class="fa-solid fa-passport h1 me-1 m-0"></i> Escolha seu Visto </h5>
-
-                <small class="w-100 d-block">
-                  <div class="text-center px-5">
-                    Escolha o tipo de visto ideal para o seu objetivo e dê início à sua jornada em busca do seu sonho.
-                  </div>
-                </small>
-                
-              </div>
-            </article>
-          </div>
-        </div> #}
         <div class="swiper swipper-processo-visto pb-5">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -300,8 +281,7 @@
             </div>
 
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
           <div class="swiper-pagination mt-6"></div>
       </div>
 
@@ -380,13 +360,15 @@
         <div class="col-md-6 col-xl-4 mb-xl-0 mb-3 ">
           <article class="card-vistos rounded border  shadow">
             <div class="card-title">
-              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Brasil</h5>
             </div>
             <div class="card-img">
-              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+              <img src="/src/assets/images/visto-brasil.jpg" class="img-fluid" alt="">
             </div>
             <div class="text p-3">
-              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+              <p class="mb-0">
+                Assessoria completa para estrangeiros que desejam entrar no Brasil. Com paisagens deslumbrantes, cultura rica e oportunidades crescentes, o Brasil oferece um ambiente acolhedor para estrangeiros.
+              </p>
             </div>
             <div class="saiba-mais">
               <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
@@ -397,13 +379,13 @@
         <div class="col-md-6 col-xl-4 mb-xl-0 mb-3 ">
           <article class="card-vistos rounded border  shadow">
             <div class="card-title">
-              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Naturalização Brasileira</h5>
             </div>
             <div class="card-img">
-              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+              <img src="/src/assets/images/visto-naturalizacao.jpeg" class="img-fluid" alt="">
             </div>
             <div class="text p-3">
-              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+              <p class="mb-0">Oferecemos suporte completo para você obter a cidadania brasileira. cuidamos de todo o processo de naturalização para que você possa aproveitar o melhor que o país oferece!</p>
             </div>
             <div class="saiba-mais">
               <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
@@ -411,16 +393,16 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-xl-6 mb-xl-0 mb-3 mt-xl-4 ">
+        <div class="col-md-6 col-xl-4 mb-xl-0 mb-3 mt-xl-4 ">
           <article class="card-vistos rounded border  shadow">
             <div class="card-title">
-              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Humanitário</h5>
             </div>
             <div class="card-img">
-              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+              <img src="/src/assets/images/humanitario.jpeg"  alt="">
             </div>
             <div class="text p-3">
-              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+              <p class="mb-0">Acolhimento e segurança com o visto humanitário Oferecemos suporte completo para quem busca proteção e uma nova oportunidade de vida no Brasil. </p>
             </div>
             <div class="saiba-mais">
               <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
@@ -428,16 +410,18 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-xl-6 mb-xl-0 mb-3 mt-xl-4">
+        <div class="col-md-6 col-xl-4 mb-xl-0 mb-3 mt-xl-4">
           <article class="card-vistos rounded border  shadow">
             <div class="card-title">
-              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Visto Americano</h5>
+              <h5 class="text-center  py-3 m-0" style="font-size: 1.25rem;">Passaporte</h5>
             </div>
             <div class="card-img">
-              <img src="/src/assets/images/card-usa.jpg" class="img-fluid" alt="">
+              <img src="/src/assets/images/card-passaporte.png" class="img-fluid" alt="">
             </div>
             <div class="text p-3">
-              <p class="mb-0">Viva experiências incríveis nos Estados Unidos! Conheça destinos icônicos ou planeje uma nova vida. O visto americano é o primeiro passo para esse sonho.</p>
+              <p class="mb-0">
+                Solicitação de Passaporte Simplificada Facilitamos todo o processo para que você obtenha seu passaporte de forma rápida e sem complicações.
+              </p>
             </div>
             <div class="saiba-mais">
               <a href="#" class="btn btn-primary rounded-3 mt-2 mb-4 d-block mx-auto" style="width: 180px;">Saiba Mais !</a>
@@ -485,25 +469,41 @@
   </div>
 </section>
 
+<div class="modal modal-lg fade" tabindex="-1" id="modal-contato">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Comece Agora !</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        {% include "/components/contact-form.twig" %}
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   {% include "/components/footer.twig" %}
 {% endblock %}
 
 
 {% block javascripts %}
-<!-- Swipper -->
+{#  Swipper #}
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <script>
 
 var swiper = new Swiper(".swipper-processo-visto", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   pagination: {
         el: ".swiper-pagination",
   },
 });
 
 </script>
+
+
 {% endblock %}
