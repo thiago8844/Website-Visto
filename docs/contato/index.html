@@ -6,6 +6,11 @@
   <title></title>
   <link rel="icon" href="/assets/logo-tfvistos-DiNkTmJy.ico" type="image/x-icon">
   
+<style>
+  .botao-contato  {
+    width: 175px;
+  }
+</style>
 
   <script type="module" crossorigin src="/assets/footer-BIA079rf.js"></script>
   <script type="module" crossorigin src="/assets/main-D7p3he8f.js"></script>
@@ -70,15 +75,90 @@
         <li class="nav-item fw-semibold">
           <a class="nav-link" aria-current="page" href="#">Assessoria</a>
         </li>
+        <li class="nav-item fw-semibold">
+          <a class="nav-link" aria-current="page" href="#">Vistos</a>
+        </li>
         <div class="ps-lg-5 mt-3 mt-lg-0 ">
-          <a class="btn btn-outline-secondary rounded-5 fw-semibold" type="submit">Contato</a>
+          <a href="/contato/" class="btn btn-outline-secondary rounded-5 fw-semibold" type="submit">Contato</a>
         </div>
       </ul>
 
     </div>
   </div>
 </nav>
-    
+    
+    <!-- contato -->
+    <section>
+      <img src="" alt="" class="decoration-star position-absolute">
+
+      <div class="container position-relative z-3 my-6">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-container mb-5 mx-auto">
+              <h4 class="text-muted text-center mb-4">Nos Contate por:</h4>
+              <div class="d-flex flex-column flex-md-row  justify-content-center align-items-center contact-box gap-4">
+                <a class="botao-contato btn btn-success rounded-2 d-flex flex-column">
+                  <span>
+                    <i class="fa-brands fa-whatsapp text-white h5 m-0 me-1"></i> 
+                    WhatsApp
+                  </span>
+                  <small style="font-size: 0.6rem;">Iniciar Conversa</small>
+                </a>
+                <a class="botao-contato btn btn-primary rounded-2 d-flex flex-column">
+                  <span><i class="fa-solid fa-phone me-1"></i> Telefone</span> 
+                  <small style="font-size: 0.6rem;">(31) 99390-0786</small>
+                </a>
+                
+                <a class="botao-contato btn btn-danger rounded-2 d-flex flex-column">
+                  <span><i class="fa-solid fa-location-dot me-1"></i> Presencial</span>
+                  <small style="font-size: 0.6rem;">Ver Localização</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 mx-auto">            
+            <form>
+              <h3 class="text-center" >Ou Entramos em Contato com você:</h3>
+
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" name="nome" placeholder="Insira Seu nome" class="form-control">
+              </div>
+              
+              <div class="mb-3">
+                <label for="numero" class="form-label">Número:</label>
+                <input type="numero" name="nome" placeholder="Insira Seu Número" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" name="email" placeholder="Insira Seu E-mail" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label for="servico" class="form-label">Serviço Desejado:</label>
+                <select name="servico" placeholder="Insira Seu nome" class="form-control"> 
+                  <option selected disabled>Selecione</option>
+                  <option value="">Visto Americano</option>
+                  <option value="">Visto Brasil</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <textarea name="mensagem" class="form-control" placeholder="Mensagem" rows="8"></textarea>
+              </div>
+
+              <div class="d-grid gap-2">
+                <input type="submit" value="Enviar" class="btn btn-primary btn-block" >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 <footer  style="background-color: #040619;">
   <div class="container py-6">
     <div class="row text-white g-4">
@@ -90,16 +170,16 @@
 
           <div class="logos-footer d-flex gap-2">
 
-              <a href="#" class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center">
+              <a href="https://www.instagram.com/tfvistos/" target="_blank" class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center">
                 <i class="fa-brands h3 fa-instagram  text-light"></i>
               </a>
-              <a href="#" class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center">
+              <a href="#" target="_blank" class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center">
                 <i class="fa-brands h3 fa-facebook  text-light"></i>
               </a>
-              <a class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center" href="#">
+              <a class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center" target="_blank" href="#">
                 <i class="fa-brands h3 fa-x-twitter  text-light" style=""></i>
               </a>
-              <a href="#" class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center">
+              <a href="#" target="_blank" class="text-decoration-none p-2  d-flex align-items-center btn btn-outline-light justify-content-center">
                 <i class="fab h3 fa-linkedin-in"></i>
               </a>
           
